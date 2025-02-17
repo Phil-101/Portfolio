@@ -10,14 +10,19 @@
 <body>
     <header>
         <div class="container">
-            <h1>Willkommen in meinem Portfolio</h1>
-            <p>Ich suche Rollen in den Bereichen <b>Content Writing</b>, <b>Content Editing</b> und <b>Data Analytics</b>.</p>
+            <div class="language-switcher">
+                <a href="#de">DE</a>
+                <a href="#en">EN</a>
+                <a href="#es">ES</a>
+            </div>
+            <h1 id="welcome">Willkommen in meinem Portfolio</h1>
+            <p id="intro">Ich suche Rollen in den Bereichen Content Writing, Content Editing und Data Analytics.</p>
         </div>
     </header>
 
     <main>
         <section id="skills" class="container">
-            <h2>Meine Fähigkeiten</h2>
+            <h2 id="skills-title">Meine Fähigkeiten</h2>
             <div class="skills-grid">
                 <div class="skill">Content Writing</div>
                 <div class="skill">Copywriting</div>
@@ -37,7 +42,7 @@
         </section>
 
         <section id="roles" class="container">
-            <h2>Gesuchte Rollen</h2>
+            <h2 id="roles-title">Gesuchte Rollen</h2>
             <div class="roles-grid">
                 <div class="role">Graduate/Internships/Entry-Level</div>
                 <div class="role">Junior (1-2 Jahre Erfahrung)</div>
@@ -48,8 +53,10 @@
 
     <footer>
         <div class="container">
-            <p>Kontaktieren Sie mich für weitere Informationen.</p>
+            <p id="contact">Kontaktieren Sie mich für weitere Informationen.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
