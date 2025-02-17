@@ -31,11 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('contact').textContent = translations[language].contact;
     }
 
-    const links = document.querySelectorAll('.language-switcher a');
-    links.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const language = this.getAttribute('href').substring(1);
+    const buttons = document.querySelectorAll('.language-switcher button');
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const language = this.textContent.toLowerCase();
             changeLanguage(language);
         });
     });
